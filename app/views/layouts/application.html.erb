@@ -3,12 +3,21 @@
   <head>
     <title>RailsTaskManager</title>
     <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Libre+Barcode+39+Text|Rozha+One" rel="stylesheet">
+
+
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <h1>BEM VINDO AO NOSSO GERENCIADOR DE TAREFAS</h1>
+    <div class="navbar">
+
+    <div class="container">
     <%= yield %>
+  </div>
   </body>
 </html>

@@ -1,0 +1,24 @@
+
+  <h3>Tarefas agendadas</h3>
+  <table class = "table">
+    <tr>
+      <th>Tarefa</th>
+      <th>Criada em</th>
+      <th>Última atualização</th>
+      <th>Descrição</th>
+      <th>Finalizada</th>
+    </tr>
+    <% @tasks.each do |task| %>
+      <tr class="<%= task.done ? "success" : "danger" %>">
+        <td><%= link_to task.name, task_path(task) %></td>
+        <td><%= task.created_at %></td>
+        <td><%= task.updated_at %></td>
+        <td><%= task.description %></td>
+        <td><%= task.done ? "Sim" : "Nao" %></td>
+      </tr>
+    <% end %>
+  </table>
+
+
+
+

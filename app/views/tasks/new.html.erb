@@ -1,0 +1,14 @@
+<h3> Adicione uma Tarefa </h3>
+<div class="form-inline">
+  <%= form_for @task do |f|%>
+
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+
+  <div class="btn"><%= f.submit %></div>
+<% end %>
+</div>
+

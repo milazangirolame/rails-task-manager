@@ -1,0 +1,17 @@
+<h3>Tarefas Agendadas</h3>
+<div class = "table">
+    <table style="width:100%"><h3></h3>
+      <tr>
+        <th>Tarefa</th>
+        <th>Descrição</th>
+        <th>Atualizar</th>
+        <th>Deletar</th>
+      </tr>
+      <tr>
+        <td><%= @task.name %></td>
+        <td><%= @task.description %></td>
+        <td><%= link_to 'atualizar', edit_task_path(@task)%></td>
+        <td><%= link_to 'excluir', task_path(@task), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    </table>
+  </div>
